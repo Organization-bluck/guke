@@ -1,0 +1,42 @@
+<!--pages/service/service.wxml-->
+<view>
+  <view class='card-box'>
+    <view class='card' style='background:url("{{imgs[0]}}") no-repeat;background-size: cover;' data-cardIndex='1' bindtap='chooseCard'>
+      <view class='card-info'>
+        <text>月卡</text>
+        <block wx:if="{{card1isSelect}}">
+          <image src='{{imgs[2]}}'></image>
+        </block>
+        <block wx:else>
+          <image src='{{imgs[3]}}'></image>
+        </block>
+      </view>
+      <view class='card-prace'>
+        <view class='prace'>12000</view>
+        <text>8折优惠</text>
+      </view>
+      <view class='card-tip'>
+        本卡即购买之日起三个月有效
+      </view>
+    </view>
+
+    <view class='card' style='background:url("{{imgs[1]}}") no-repeat;background-size: cover;' data-cardIndex="2" bindtap='chooseCard'>
+      <view class='card-info'>
+        <text>季卡</text>
+        <block wx:if="{{card2isSelect}}">
+          <image src='{{imgs[2]}}'></image>
+        </block>
+        <block wx:else>
+          <image src='{{imgs[3]}}'></image>
+        </block>
+      </view>
+      <view class='card-prace'>
+        <view class='prace'>50000</view>
+        <text>总金额</text>
+      </view>
+      <view class='card-tip'>
+        本卡即购买之日起30天有效
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+/* pages/about/about.wxss */
+.banner{
+  width: 100%;
+  height: 478rpx; 
+}
+.title{
+  font-size: 34rpx;
+  color: #000;
+  margin-top: -50rpx;
+  margin-left: 40rpx;
+}
+.title .font1{
+  margin-right: 10rpx;
+  color: #90AEFF;
+}
+.content{
+  margin-top: 40rpx;
+  padding: 0 40rpx;
+  font-size: 24rpx;
+  line-height:2.4;
+}

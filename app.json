@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/service/service",
+    "pages/index/index",
+    "pages/about/about",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "上海专正骨科",
+    "navigationBarTextStyle":"black",
+    "backgroundColorBottom":"#fff"
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#90AEFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我要咨询",
+        "iconPath":"/images/zixun_1.png",
+        "selectedIconPath":"/images/zixun_2.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "会员服务",
+        "iconPath": "/images/fuwu_1.png",
+        "selectedIconPath": "/images/fuwu_2.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我们",
+        "iconPath": "/images/about_1.png",
+        "selectedIconPath": "/images/about_2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  } 
+}

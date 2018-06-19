@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="wrap">
+  <form bindsubmit="formSubmit" bindreset="formReset" bindreset="reset">
+    <view class="section">
+      <view class='input-info'>
+        <image src='{{imgs[0]}}'></image>
+        <text>您的姓名</text>
+      </view>
+      <input placeholder="请输入姓名" name="name" value='{{name}}'/>
+    </view>
+
+     <view class="section">
+      <view class='input-info'>
+        <image src='{{imgs[1]}}'></image>
+        <text>手机号码</text>
+      </view>
+      <input placeholder="请输入电话号" name="tel" type="number" maxlength='11' value='{{tel}}'/>
+    </view> 
+
+    <view class="section">
+      <view class='input-info'>
+        <image src='{{imgs[2]}}'></image>
+        <text>电子邮箱</text>
+      </view>
+      <input placeholder="请输入电子邮箱"  name="email" value='{{email}}'/>
+    </view> 
+
+    <view class="section">
+      <view class='input-info'>
+        <image src='{{imgs[3]}}'></image>
+        <text>备注说明</text>
+      </view>
+      <textarea class='textarea' placeholder="请输入备注说明"  name="msg" value='{{msg}}'/>
+    </view> 
+
+    <button form-type="submit"  hover-class='button-hover' open-type="getUserInfo">提   交</button>
+  </form>
+  <loading hidden="{{submitHidden}}">
+    正在提交...
+  </loading>
+</view>
